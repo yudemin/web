@@ -1,0 +1,11 @@
+p{
+	font-size:18px;
+}
+
+h2:hover{
+	color:red;
+}
+
+p:last-child:hover{
+	color:blue;
+}

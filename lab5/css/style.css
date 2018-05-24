@@ -1,0 +1,63 @@
+@keyframes shadow {
+from {text-shadow: 0 0 3px black;}
+50% {text-shadow: 0 0 30px black;}
+to {text-shadow: 0 0 3px black;}
+}
+div {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+}
+span {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  	
+  box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+  
+  animation: run 5s infinite;
+}
+
+.one {
+  background: red;
+  animation-delay: 0.6s;
+}
+.two {
+  background: green;
+  animation-delay: 0.4s;
+}
+.three {
+  background: blue;
+  animation-delay: 0.2s;
+}
+
+.four {
+  background: black;
+}
+
+
+@keyframes run {
+  0% {
+    transform: translate(0%);
+    
+  }
+  25% {
+    transform: translate(300%,-300%) rotate(180deg) rotateX(180deg);     
+  }
+  50% {
+    transform: translate(300%,300%);
+	
+  }
+  75% {
+    transform: translate(-300%,300%) rotate(180deg) rotateX(180deg); 
+  
+  }
+}
+h1 {
+	animation: shadow 2s infinite ease-in-out;
+	
+}
