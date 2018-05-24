@@ -1,0 +1,53 @@
+.col-md-4{
+	width:600px;
+	margin-bottom: 10px;
+}
+header strong {
+	font-size: 24pt;
+}
+ul.headul li {
+		font-size: 16pt;
+		display: inline-block; 
+   		margin-right: 5px;    	
+    	padding: 3px;
+	}
+ul.headul li a{
+	color:#ffffff;
+	text-decoration: none;
+}
+table.standard{
+	border:1px solid black;
+	border-collapse: collapse;
+}
+table.standard td,table.standard th{
+	border:1px solid black;
+}
+
+.films{
+	margin:0 5%;
+}
+
+img {
+	border-radius: 10px;
+}
+.films .container-fluid p{
+text-align: justify;
+}
+.films .container-fluid {
+	border-radius: 10px;
+	padding:10px;
+	
+	margin-bottom: 10px;
+	background-color: rgb(233,236,239)
+}
+.ima img{
+	margin:5px 2px;
+	width: 33%;
+	height: 33%;
+
+}
+.card {
+	 
+	
+	
+}
