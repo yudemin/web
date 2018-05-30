@@ -10,8 +10,8 @@
 
 <button onclick="
 alert('ТУТ НИЧЕГО((');
-">УРОК РАЗ</button>
-<!--SASAAAAAAAAAAAAAAAAAAAAT-->
+">УРОК 1</button>
+
 <button onclick="
 alert('НАМБЕР ТУ');
 // #1
@@ -93,7 +93,7 @@ num++;
 num++;
 num--;
 alert(num);
-">УРОК ДВА</button> 
+">УРОК 2</button> 
 
 
 
@@ -150,7 +150,7 @@ var arr = {
 var lang = 'ru';
 var day = 3;
 alert(arr[lang][day]);
-">УРОК ТРИ</button>
+">УРОК 3</button>
 
 <button onclick="
 alert('НАМБЕР ФОР');
@@ -326,7 +326,7 @@ if (str1 == str2) {
 } else {
 	alert('Нет');
 }
-">УРОК ЧОТЫРЕ</button>
+">УРОК 4</button>
 
 
 <button onclick="
@@ -441,7 +441,7 @@ for (var i = 0; i < arr.length; i++) {
 for (var n = 1000, num = 0; n > 50; n /= 2, num++);
 alert(n);
 alert(num);
-">УРОК ПЯТЬ</button>
+">УРОК 5</button>
 
 <button onclick="
 alert('НАМБЕР СЫКС');
@@ -512,7 +512,7 @@ for (var i = 1; i <= num; i++) {
 	fact = fact * i;
 }
 alert(fact);
-">УРОК ШЕСТЬ</button>
+">УРОК 6</button>
 
 <button onclick="
 alert('НАМБЕР СЭВЭН')
@@ -578,7 +578,7 @@ for (var i = 1; i < arr.length; i++) {
 var result = arr.join('');
 alert(result);
 
-">УРОК СЕМЬ</button>
+">УРОК 7</button>
 
 <button onclick="
 alert('НАМБЕР ЭЙТ')
@@ -640,7 +640,7 @@ alert(result);
 
 
 
-">УРОК ВОСЕМЬ</button>
+">УРОК 8</button>
 <button onclick="
 alert('НАМБЕР НАЙН')
 //////
@@ -672,7 +672,7 @@ if (str.substr(-5) == '.html') {
 	alert('Нет');
 }
 /////////
-">УРОК ДЕВЯТЬ</button>
+">УРОК 9</button>
 
 
 <button onclick="
@@ -695,7 +695,7 @@ function getDay(num) {
 	return arr[num - 1];
 }
 /////////
-">УРОК ДЕСЯТЬ</button>
+">УРОК 10</button>
 
 
 <button onclick="
@@ -744,7 +744,7 @@ if (flag == true) {
 	alert('Нет');
 }
 //////////
-">УРОК ОДИНАДЦАТЬ</button>
+">УРОК 11</button>
 
 
 <button onclick="
@@ -762,7 +762,7 @@ function func(num) {
 	return num < 0;
 }
 ////
-">УРОК ДВЕНАДЦАТЬ</button>
+">УРОК 12</button>
 
 
 <button onclick="
@@ -808,7 +808,7 @@ for(var i = 0; i <= 10; i++) {
 	document.write(str + '<br>');
 }
 //////////
-">УРОК ТРИНАДЦАТЬ</button>
+">УРОК 13</button>
 
 <button onclick="
 alert('НАМБЕР ФОРТИН')
@@ -878,127 +878,230 @@ for (var i = 0; i < arr.length; i++) {
 }
 alert(sum);
 /////////////
-">УРОК ЧЕТЫРНАДЦАТЬ</button>
+">УРОК 14</button>
 
 <button onclick="
 alert('НАМБЕР ФИФТИН')
 //////
 function isNumberInRange(num) {
-	return num > 0 && num < 10;
+  return num > 0 && num < 10;
 }
-//////////
 var arr = [1, 3, 5, 6, 9, 11, 15, 30];
 var result = [];
 for (var i = 0; i < arr.length; i++) {
-	if (isNumberInRange(arr[i])) {
-		result.push(arr[i]);
-	}
+  if (isNumberInRange(arr[i])) {
+    result.push(arr[i]);
+  }
 }
 conslole.log(result);
-////////
 function getDigitsSum(num) {
-	var num = String(num);
-	var sum = 0;
-	for (var i = 0; i < num.length; i++) {
-		sum += Number(num[i]);
-	}
-	return sum;
+  var num = String(num);
+  var sum = 0;
+  for (var i = 0; i < num.length; i++) {
+    sum += Number(num[i]);
+  }
+  return sum;
 }
-alert(getDigitsSum(123)); 
-//////////
+alert(getDigitsSum(123));
 for (var i = 1; i < 2017; i++) {
-	if (getDigitsSum(i) == 13) {
-		console.log(i);
-	}
+  if (getDigitsSum(i) == 13) {
+    console.log(i);
+  }
 }
-//////////
 function isEven(num) {
-	return num % 2 == 0;
+  return num % 2 == 0;
 }
-////////////
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var result = [];
 for (var i = 0; i < arr.length; i++) {
-	if(isEven(arr[i])) {
-		result.push(arr[i]);
-	}
+  if(isEven(arr[i])) {
+    result.push(arr[i]);
+  }
 }
 console.log(result);
-///////////
 function getDivisors(num) {
-	var arr = [];
-	for (var i = 1; i <= num; i++) {
-		if (num % i == 0) {
-			arr.push(i);
-		}
-	}
-	return arr;
+  var arr = [];
+  for (var i = 1; i <= num; i++) {
+    if (num % i == 0) {
+      arr.push(i);
+    }
+  }
+  
+  return arr;
 }
 alert(getDivisors(12));
-">УРОК ПЯТНАДЦАТЬ</button>
+">УРОК 15</button>
 
 <button onclick="
 alert('НАМБЕР СЫКСТИН')
 //////
 var str ='abcde abcde abcde';
 var newArr = [];
+
 var arr = str.split(' ');
 for (var i = 0; i < arr.length; i++) {
-	newArr.push(ucfirst(arr[i]));
+  newArr.push(ucfirst(arr[i]));
 }
+
 var newStr = newArr.join(' ');
 alert(newStr);
+
 function ucfirst(str) {
-	return str[0].toUpperCase() + str.substr(1);
+  return str[0].toUpperCase() + str.substr(1);
 }
-//////////
-//////////
+var str ='var_text_hello';
+var newArr = [];
+
+var arr = str.split('_');
+for (var i = 1; i < arr.length; i++) {
+  newArr.push(ucfirst(arr[i]));
+}
+
+var newStr = newArr.join(' ');
+alert(newStr);
+
+function ucfirst(str) {
+  return str[0].toUpperCase() + str.substr(1);
+}
 function inArray(str, arr) {
-	for (var i = 0; i < arr.length; i++) {
-		if (arr[i] === str) {
-			return true;
-		}
-	}
-	return false;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === str) {
+      return true;
+    }
+  }
+  return false;
 }
+
 var str = 'яблоко';
 var arr = ['банан', 'яблоко', 'персик'];
-alert('16-2');
 console.log(inArray(str, arr));
-////////////
 var str = '123456';
-for (var i = 0; i < str.length; i++) {
-		if (i%2==0) {
-			q=str[i-1];
-			str[i-1]=str[i];
-			str[i]=q;
-		}
-	}
-alert(str);
+
+function toRearrange(text)
+{
+var arr = str.split('');
+var arrNew = [];
+for(var i=0; i<arr.length; i+=2)
+{
+var temp = arr.slice(i, i+2).reverse();
+arrNew = arrNew.concat(temp);
+}
+str = arrNew.join('');
+return str;
+}
+document.write(toRearrange(str));
 ////////////
-">УРОК ШЕСТНАДЦАТЬ</button>
+">УРОК 16</button>
 
 <button onclick="
 alert('НАМБЕР СЕВЕНТИН')
 //////
-var arr = ['банан', 'яблоко', 'персик'];
 function func(arr) {
-	alert(arr[0]);
-	arr.splice(0, 1);
-	if (arr.length > 0) {
-		func(arr);
-	}
+  alert(arr[0]);
+  arr.splice(0, 1);
+  if (arr.length > 0) {
+    func(arr);
+  }
 }
-func(arr);
-">УРОК СЕМНАДЦАТЬ</button>
+var bigNum = 3452349567;
+var result = 0;
+
+simplify = function(num){
+result = 0;
+var numArr = num.toString().split('');
+for (var i = 0; i < numArr.length; i++){
+console.log('i = ' + i);
+result += parseInt(numArr[i]); 
+console.log(result);
+}
+
+if (result > 9){
+simplify(result);
+}
+}
+">УРОК 17</button>
 
 
 <button onclick="
-alert('НАМБЕР ТВЭЛВ')
+alert('НАМБЕР ЭЙТИН')
+//////
+for (var i = 1; i <= 100; i++) {
+  document.write(i + '<br>');
+}
+for (var i = 100; i > 0; i--) {
+  document.write(i + '<br>');
+}
+for (var i = 2; i < 100; i += 2) {
+  document.write(i + '<br>');
+}
+for (var i = 2; i < 100; i += 2) {
+  document.write(i + '<br>');
+}
+for (var i = 2; i < 100; i += 2) {
+  document.write(i + '<br>');
+}
+var arr = [];
+for (var i = 0; i < 10; i++) {
+  arr[i] = 'x';
+}
+console.log(arr);
+var arr = [];
+for (var i = 1; i <= 10; i++) {
+  arr.push(i);
+}
+console.log(arr);
+var arr = [];
+for (var i = 0; i < 10; i++) {
+  arr.push(Math.random().toFixed(2));
+}
+console.log(arr);
+var arr = [];
+for (var i = 0; i < 10; i++) {
+  arr.push(Math.round(Math.random() * 10) + 1);
+}
+console.log(arr);
+var arr = [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12];
+for (var i = 0; i < arr.length; i++) {
+  if(arr[i] > 0 && arr[i] < 10) {
+    console.log(arr[i]);
+  }
+}
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var i = 0; i < arr.length; i++) {
+  if(arr[i] == 5) {
+    alert('Есть!');
+    break;
+  }}
+var arr = [1, 2, 3, 4, 5];
+var sum = 0;
+for (var i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+alert(sum);
+var arr = [1, 2, 3, 4, 5];
+var sum = 0;
+for (var i = 0; i < arr.length; i++) {
+  sum += arr[i] * arr[i];
+}
+alert(sum);
+">УРОК 18</button>
+
+<button onclick="
+alert('НАМБЕР НАЙНТИН')
+//////
+document.location.href = "less19.php";
+">УРОК 19</button>
+
+
+
+<button onclick="
+alert('НАМБЕР №№№№№№№№№№№№№№№№№№№№№№№№№№№')
 //////
 
 
-">УРОК ДВЕНАДЦАТЬ</button>
+">УРОК №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№</button>
+
+
 
 
 
