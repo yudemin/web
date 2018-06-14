@@ -7,7 +7,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+</head>
 <button onclick="
 alert('ТУТ НИЧЕГО((');
 ">УРОК 1</button>
@@ -1086,20 +1086,17 @@ for (var i = 0; i < arr.length; i++) {
 alert(sum);
 ">УРОК 18</button>
 
-<button onclick="
-alert('НАМБЕР НАЙНТИН')
-//////
-document.location.href = "less19.php";
-">УРОК 19</button>
+<style type="text/css">
+	a{
+		text-decoration: none;
+		color:black;
+	}
+</style>
+<button onclick=""><a href="less19.html">УРОК 19</a></button>
+<br>
 
-
-
-<button onclick="
-alert('НАМБЕР №№№№№№№№№№№№№№№№№№№№№№№№№№№')
-//////
-
-
-">УРОК №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№</button>
+<button onclick=""><a href="less20.html">УРОК 20</a></button>
+<br>
 
 
 
@@ -1114,5 +1111,4 @@ alert('НАМБЕР №№№№№№№№№№№№№№№№№№№№
  	<span class="three"></span>
  	<span class="four"></span>
  	</div>
-</body>
 </html>

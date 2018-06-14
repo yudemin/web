@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>lab5</title>
+    <link href="css/style.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+
+<button onclick="alert('Привет!')">Нажми на меня!</button>
+<br><br>
+
+<button onmouseover="alert('Привет!')">Наведи на меня!</button>
+<br><br>
+
+<button ondblclick="alert('Привет!')">Двойной счелчок по мне!</button>
+<br><br>
+
+<button onmouseout="alert('Привет!')">Наведи на меня мышь - а потом убери!</button>
+<br><br>
+
+<input type="text" value="Ку-ку" id="first">
+<button onclick="gos()">Нажми на меня!</button>
+<script type="text/javascript">
+	function gos(){
+		alert(document.getElementById('first').value);
+	}
+</script>
+<br><br>
+
+
+
+<input type="text" value="Ку-ку" id="kuk">
+<button onclick="go6()">Нажми на меня!</button>
+<script type="text/javascript">
+	function go6(){
+		document.getElementById('kuk').value="АЙ! больно :'(";
+	}
+</script>
+<br><br>
+
+<img id="imagee" src="https://avatarfiles.alphacoders.com/120/thumb-120715.png" width="150"><br>
+<button onclick="goi()">Нажми на меня! jojo</button>
+<script type="text/javascript">
+	function goi() {
+		document.getElementById('imagee').src = 'https://media1.tenor.com/images/072f325140926d6a34b35ab90afecada/tenor.gif?itemid=5455756';
+	}
+</script>
+<br><br>
+
+<input type="text" value="Нажми на меня!" onfocus="go1(this)">
+<script type="text/javascript">
+	function go1(elem){
+		alert(elem.value);
+	}
+</script>
+<br><br>
+
+<input type="text" value="Нажми на меня!" onfocus="go2(this)">
+<script type="text/javascript">
+	function go2(elem){
+		elem.value="АЙ! больно :'(";
+	}
+</script>
+<br><br>
+
+<input type="text" value="Нажми на меня!" onfocus="go(this)" onblur="stop(this)">
+<script type="text/javascript">
+	function go(elem){
+		elem.value="АЙ! больно :'(";
+	}
+	function stop(elem){
+		elem.value="вот туда и тыкай";
+	}
+</script>
+<br><br>
+
+<input type="submit" onclick="go(this)" value="Нажми на меня!">
+<script type="text/javascript">
+	function go(elem){
+		elem.value="АЙ! больно :'(";
+	}
+</script>
+<br><br>
+
+<input type="submit" onclick="go(this)" value="Нажми на меня!">
+
+
+<img src="https://avatarfiles.alphacoders.com/120/thumb-120715.png" width="150" id="test" onmouseover="over(this)" onmouseout="out(this)">
+<script type="text/javascript">
+	function over(elem){
+		elem.src = 'https://media1.tenor.com/images/072f325140926d6a34b35ab90afecada/tenor.gif?itemid=5455756';
+	}
+	function out(elem){
+		elem.src="https://avatarfiles.alphacoders.com/120/thumb-120715.png";
+	}
+</script>
+<br><br>
+
+
+<input type="text" value="Ку-ку" id="test2">
+<button onclick="colo()">Нажми на меня!</button>
+<script type="text/javascript">
+function colo() {
+	var elem = document.getElementById('test2');
+	elem.style.color = 'red';
+	elem.style.width='400px';
+}
+</script>
+<br><br>
+
+<input type="text" value="Ку-ку" id="zaz">
+<button onclick="hide()">Нажми на меня!</button>
+<button onclick="show()">Нажми потом на меня!</button>
+<script type="text/javascript">
+	function hide() {
+		document.getElementById('zaz').style.display='none';
+	}
+	function show() {
+		document.getElementById('zaz').style.display='inline';
+	}
+</script>
+<br><br>
+<input type="text" value="oh my" id="kok">
+<button onclick="cha()">Нажми на меня!</button>
+<script type="text/javascript">
+	function cha(){
+		document.getElementById('zaz').style.display='block';
+		document.getElementById('kok').style.border="3px solid green";
+		document.getElementById('kok').style.padding="20px";
+		document.getElementById('kok').style.color="red";
+		
+	}
+</script>
+<br><br>
+<script type="text/javascript">
+	function bl(){
+		document.getElementById('block').disabled=true;
+		document.getElementById('unblock').style.display='block';
+	}
+	function unbl(){
+		document.getElementById('block').disabled=false;
+		document.getElementById('unblock').style.display='none';
+	}
+</script>
+<input type="submit" onclick="bl()" value="push me" id="block">
+<input type="submit" onclick="unbl()" value="now push me))0" id="unblock" style="display: none;">
+<br><br>
+<script type="text/javascript">
+	function dro(){
+		document.getElementById('dr').value++;
+	}
+</script>
+<input type="submit" onclick="dro()" value="0" id="dr" style="padding:10px">
+<br><br>
+<script type="text/javascript">
+	function cla(){
+		document.getElementById('cla').value=document.getElementById('cla').className;
+	}
+</script>
+<input type="submit" value="class'Ы" onclick="cla()" id="cla" class="q ww eee">
+<br><br>
+
+<script type="text/javascript">
+	function swap(){
+		var a=document.getElementById('sw1').value;
+		document.getElementById('sw1').value=document.getElementById('sw2').value;
+		document.getElementById('sw2').value=a;
+	}
+</script>
+<input type="text" value="parovoz" id="sw1">
+<input type="text" value="zoz" id="sw2">
+<input type="submit" onclick="swap()" value="ЖМИЕ">
+
+<br>
+<br>
+<script type="text/javascript">
+	function qua(){
+		document.getElementById('quadrores').value=Math.pow(document.getElementById('quadro').value,2)
+	}
+</script>
+<input type="text" value="0" id="quadro">
+<input type="text" value="0" id="quadrores" disabled="true">
+<input type="submit" onclick="qua()" value="quadro_shmadro">
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+</html>

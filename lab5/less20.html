@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>lab5</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<script type="text/javascript">
+	function n1() {
+		document.getElementById("n1").innerHTML='BOOO<b>OOOII</b>IIIIII';
+	}
+</script>
+<p id="n1">some random</p>
+<input type="submit" value="cho kak" onclick="n1()">
+
+
+<script type="text/javascript">
+	function n2() {
+		document.getElementById("n2").outerHTML='<h2>BOOOOOOIIIIIIII</h2>';
+	}
+</script>
+<p id="n2">some random</p>
+<input type="submit" value="cho kak" onclick="n2()">
+<br><br>
+<script type="text/javascript">
+	function sw(elem){
+		document.getElementById("sw1").innerHTML=elem.value;
+	}
+</script>
+<input type="text" onkeypress="sw(this)" id="sw">
+<p id="sw1"></p>
+
+
+<script type="text/javascript">
+	function copy(){
+		var elem=document.getElementsByTagName('a');
+		for (var i=0;i<elem.length;i++){
+			elem[i].innerHTML=elem[i].innerHTML+elem[i].getAttribute('href');
+		}
+	}
+</script>
+<a href="http://vk.com">vk</a><br>
+<a href="http://google.com">google</a><br>
+<input  type="submit" value="copy" onclick="copy()">
+<br><br>
+
+
+<script type="text/javascript">
+	function kik(){
+		document.getElementById('kik').innerHTML="some f%ggy boi";
+		document.getElementById('kik').style.color="red";
+		document.getElementById('kikb').disabled=true;
+	}
+</script>
+<p id="kik">test text</p>
+<input type="submit" id="kikb" value="kik" onclick="kik()">
+
+</body>
+</html>
